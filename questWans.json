@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "question": "Entomology is the science that studies",
+    "answers": [
+      {
+        "answers": "Behavior of human beings",
+        "value": 0
+      },
+      {
+        "answers": "Insects",
+        "value": 10
+      },
+      {
+        "answers": "The origin and history of technical and scientific terms",
+        "value": 0
+      },
+      {
+        "answers": "The formation of rocks",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "For which of the following disciplines is Nobel Prize awarded?",
+    "answers": [
+      {
+        "answers": "Physics and Chemistry",
+        "value": 0
+      },
+      {
+        "answers": "Physiology or Medicine",
+        "value": 0
+      },
+      {
+        "answers": "Literature, Peace and Economics",
+        "value": 0
+      },
+      {
+        "answers": "All of the above",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Hitler party which came into power in 1933 is known as",
+    "answers": [
+      {
+        "answers": "Labour Party",
+        "value": 0
+      },
+      {
+        "answers": "Nazi Party",
+        "value": 10
+      },
+      {
+        "answers": "Ku-Klux-Klan",
+        "value": 0
+      },
+      {
+        "answers": "Democratic Party",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "First China War was fought between",
+    "answers": [
+      {
+        "answers": "China and Britain",
+        "value": 10
+      },
+      {
+        "answers": "China and France",
+        "value": 0
+      },
+      {
+        "answers": "China and Egypt",
+        "value": 0
+      },
+      {
+        "answers": "China and Greek",
+        "value": 0
+      }
+    ]
+  }
+]
