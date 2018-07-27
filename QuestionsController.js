@@ -1,7 +1,15 @@
-var App = angular.module('App', []);
+
+var App = angular.module('App', ['ngRoute']).config(function($routeProvider){
+    $routeProvider.when('/score',
+        {
+            templateUrl: 'score.html'
+        });
+});
 
 var result = [];
 var score = 0;
+
+
 
 App.controller('questCtrl', function($scope, $http) {
     $http.get('questWans.json')
@@ -19,13 +27,13 @@ App.controller('questCtrl', function($scope, $http) {
         result.push(obj)
     };
 
-    $scope.calculateValues = function(){
+    $scope.viewResult= function () {
         for(i in result){
-            score = score + parseInt(i.value);
+            score = score + i.value;
+            console.log("in");
         }
+        console.log("in viewResult()");
         return score;
-    }
-
-    console.log(result);
-    console.log(score);
+    };
+    console.log("the score is: "+ score);
 });

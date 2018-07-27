@@ -5,11 +5,12 @@
     <title>Questions</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
-    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src="QuestionsController.js"></script>
 </head>
 <body>
-
-<div ng-controller="questCtrl">
+<ng-view></ng-view>
+<div ng-controller="questCtrl" action="/">
     <ul>
         <li ng-repeat="q in allQuestions">
             {{q.question}}
@@ -22,7 +23,7 @@
     </ul>
 </div>
 <div>
-    <button type="button" ng-click="calculateValues()" class="btn btn-default">submit answers</button>
+    <button type="button" class="btn btn-default"><a href="#/score">submit answers</a></button>
 </div>
 
 </body>
