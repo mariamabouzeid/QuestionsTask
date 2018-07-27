@@ -6,15 +6,14 @@ App.controller('questCtrl', ['$scope','$rootScope','$http',function($scope, $roo
         .then(function(res){
             $scope.allQuestions = res.data;
         });
-    $rootScope.result = [];
+    $rootScope.result = 0;
 
     $scope.getQuestion = function (q, v){
-        console.log(q);
-        console.log(v);
-        var obj = {};
-        obj[q] = $rootScope.result.label;
-        obj[v] = $rootScope.result.value;
 
-        $rootScope.result.push(obj)
+        $rootScope.result = $rootScope.result + parseInt(v);
+        console.log("V value is: "+v);
+        console.log("Result value is: "+$rootScope.result);
     };
+
+    console.log("Total result inside QuestionsController: "+$rootScope.result);
 }]);
