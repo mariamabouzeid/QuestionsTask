@@ -1,16 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html ng-app="App">
 <head>
     <meta charset="utf-8">
     <title>Questions</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
-    <script src="QuestionsController.js"></script>
+    <script src="controller/QuestionsController.js"></script>
+    <script src="/app.js"></script>
 </head>
 <body>
-<ng-view></ng-view>
-<div ng-controller="questCtrl" action="/">
+<div ng-controller="questCtrl">
     <ul>
         <li ng-repeat="q in allQuestions">
             {{q.question}}
